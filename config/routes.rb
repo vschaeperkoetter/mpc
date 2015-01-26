@@ -1,4 +1,6 @@
 Rails.application.routes.draw do 
+  get 'tournaments/new'
+
   get 'pages/home'
   get 'pages/winners'
   get 'tournament/new'
