@@ -1,5 +1,5 @@
 <div class="jumbotron center">
-     <h1>Welcome to my app!</h1>
+     <h1>Welcome to the Kitty Karnival!</h1>
      <% if user_signed_in? %>
           <% kittens = {} %>
           <% kittens = HTTParty.get("http://pv.pop.umn.edu/images/").parsed_response["data"][0] %>
