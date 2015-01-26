@@ -1,0 +1,5 @@
+<div class="jumbotron center">
+  <% kittens = HTTParty.get("http://pv.pop.umn.edu/images/").parsed_response["data"] %>
+  <%= image_tag(kittens[0], size: "300") %>
+  <%= link_to "Begin Tournament!", tournment_new_path %>
+</div>
