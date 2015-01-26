@@ -1,7 +1,9 @@
 <div class="jumbotron center">
      <h1>Welcome to my app!</h1>
      <% if user_signed_in? %>
-          # do something
+          <% kittens = {} %>
+          <% kittens = HTTParty.get("http://pv.pop.umn.edu/images/").parsed_response["data"][0] %>
+          <%= kittens %>
      <% else %>
        <p>
          <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
