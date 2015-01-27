@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @kitten.url %>
+</p>
+
+<p>
+  <strong>Wins:</strong>
+  <%= @kitten.wins %>
+</p>
+
+<%= link_to 'Edit', edit_kitten_path(@kitten) %> |
+<%= link_to 'Back', kittens_path %>

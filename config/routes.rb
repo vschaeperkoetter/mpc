@@ -1,9 +1,10 @@
 Rails.application.routes.draw do 
-  get 'tournaments/new'
+  resources :kittens
 
   get 'pages/home'
   get 'pages/winners'
-  get 'tournament/new'
+  
+  resources :tournaments
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

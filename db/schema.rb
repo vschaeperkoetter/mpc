@@ -11,10 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150126205337) do
+ActiveRecord::Schema.define(version: 20150127005508) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "kittens", force: :cascade do |t|
+    t.string   "url"
+    t.integer  "wins"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "kittens_tournaments", force: :cascade do |t|
+    t.integer  "kitten_id"
+    t.integer  "tournament_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "kittens_tournaments", ["kitten_id"], name: "index_kittens_tournaments_on_kitten_id", using: :btree
+  add_index "kittens_tournaments", ["tournament_id"], name: "index_kittens_tournaments_on_tournament_id", using: :btree
 
   create_table "tournaments", force: :cascade do |t|
     t.integer  "user_id"
@@ -44,5 +61,7 @@ ActiveRecord::Schema.define(version: 20150126205337) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "kittens_tournaments", "kittens"
+  add_foreign_key "kittens_tournaments", "tournaments"
   add_foreign_key "tournaments", "users"
 end
