@@ -12,7 +12,8 @@ class TournamentsController < ApplicationController
     @kittens = HTTParty.get("http://pv.pop.umn.edu/images/").parsed_response["data"]
 
     @kittens.each do |kitten_url|
-      @tournament.kittens.build(url: kitten_url, wins: 0).save
+      @kitten = Kitten.create(url: kitten_url, wins: 0)
+      @tournament.kittens << @kitten
     end
     @tournament.save
 
