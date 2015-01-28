@@ -5,31 +5,73 @@
 }
 
 #round1 {
-	img {
-		margin-bottom: 20px;
-	} 
+	.competitor {
+		display: inline-block;
+		border: 1px solid;
+		margin: 20px 0px;
+	}
 }
 
 #round2 {
-	img {
-		margin-bottom: 20px;
-	} 
+	display:inline-block;
+	vertical-align: top; 
+	width: 15%;
+	.competitor {
+		p {
+			margin: 65px 0px;
+		}
+		width: 150px;
+		height: 150px;
+		display: inline-block;
+		border: 1px solid;
+		margin: 20px 0px;
+	}
 }
 
 #round3 {
-	img {
-		margin-bottom: 175px;
+	display:inline-block;
+	vertical-align: top; 
+	width: 15%;
+	.competitor {
+		p {
+			margin: 65px 0px;
+		}
+		width: 150px;
+		height: 150px;
+		display: inline-block;
+		border: 1px solid;
+		margin: 20px 0px;
 	}
-	#top {
-		margin-top: 90px
-	} 
 }
 
 #round4 {
-	img {
-		margin-bottom: 500px;
+	display:inline-block;
+	vertical-align: top; 
+	width: 15%;
+	.competitor {
+		p {
+			margin: 65px 0px;
+		}
+		width: 150px;
+		height: 150px;
+		display: inline-block;
+		border: 1px solid;
+		margin: 20px 0px;
 	}
-	#top {
-		margin-top: 250px
-	} 
+}
+
+#winner {
+	display:inline-block;
+	vertical-align: top; 
+	width: 15%;
+	.competitor {
+		p {
+			margin: 65px 0px;
+		}
+		width: 150px;
+		height: 150px;
+		display: inline-block;
+		border: 1px solid;
+		margin: 20px 0px;
+	}
 }

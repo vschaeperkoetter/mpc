@@ -1,45 +1,49 @@
 <div id="round1" style="display:inline-block; vertical-align: top; width: 35%;">
 	<h1 id="title" style="text-align: center">Round 1</h1>
 	<div class="center">
-		<%= image_tag(@kittens[0].url, size: '150') %> vs <%= image_tag(@kittens[1].url, size:'150') %><br>
-		<%= image_tag(@kittens[2].url, size: '150') %> vs <%= image_tag(@kittens[3].url, size:'150') %><br>
-		<%= image_tag(@kittens[4].url, size: '150') %> vs <%= image_tag(@kittens[5].url, size:'150') %><br>
-		<%= image_tag(@kittens[6].url, size: '150') %> vs <%= image_tag(@kittens[7].url, size:'150') %><br>
-		<%= image_tag(@kittens[8].url, size: '150') %> vs <%= image_tag(@kittens[9].url, size:'150') %><br>
-		<%= image_tag(@kittens[10].url, size: '150') %> vs <%= image_tag(@kittens[11].url, size:'150') %><br>
-		<%= image_tag(@kittens[12].url, size: '150') %> vs <%= image_tag(@kittens[13].url, size:'150') %><br>
-		<%= image_tag(@kittens[14].url, size: '150') %> vs <%= image_tag(@kittens[15].url, size:'150') %><br>
+		<div class="competitor" id="1"><%= image_tag(@kittens[0].url, size: '150') %></div> VS <div class="competitor" id="2"><%= image_tag(@kittens[1].url, size: '150') %></div>
+		<div class="competitor" id="3"><%= image_tag(@kittens[2].url, size: '150') %></div> VS <div class="competitor" id="4"><%= image_tag(@kittens[3].url, size: '150') %></div>
+		<div class="competitor" id="5"><%= image_tag(@kittens[4].url, size: '150') %></div> VS <div class="competitor" id="6"><%= image_tag(@kittens[5].url, size: '150') %></div>
+		<div class="competitor" id="7"><%= image_tag(@kittens[6].url, size: '150') %></div> VS <div class="competitor" id="8"><%= image_tag(@kittens[7].url, size: '150') %></div>
+		<div class="competitor" id="9"><%= image_tag(@kittens[8].url, size: '150') %></div> VS <div class="competitor" id="10"><%= image_tag(@kittens[9].url, size: '150') %></div>
+		<div class="competitor" id="11"><%= image_tag(@kittens[10].url, size: '150') %></div> VS <div class="competitor" id="12"><%= image_tag(@kittens[11].url, size: '150') %></div>
+		<div class="competitor" id="13"><%= image_tag(@kittens[12].url, size: '150') %></div> VS <div class="competitor" id="14"><%= image_tag(@kittens[13].url, size: '150') %></div>
+		<div class="competitor" id="15"><%= image_tag(@kittens[14].url, size: '150') %></div> VS <div class="competitor" id="16"><%= image_tag(@kittens[15].url, size: '150') %></div>
 	</div>
 </div>
 
-<div id="round2" style="display:inline-block; vertical-align: top; width: 20%;">
+<div id="round2">
 	<h1 id="title" style="text-align: center">Round 2</h1>
 	<div class="center">
-		<%= image_tag(@kittens[0].url, size: '150') %><br>
-		<%= image_tag(@kittens[2].url, size: '150') %><br>
-		<%= image_tag(@kittens[4].url, size: '150') %><br>
-		<%= image_tag(@kittens[6].url, size: '150') %><br>
-		<%= image_tag(@kittens[8].url, size: '150') %><br>
-		<%= image_tag(@kittens[10].url, size: '150') %><br>
-		<%= image_tag(@kittens[12].url, size: '150') %><br>
-		<%= image_tag(@kittens[14].url, size: '150') %><br>
+		<div class="competitor" id="1"><p>Game 1 Winner</p></div> VS <div class="competitor" id="2"><p>Game 2 Winner</p></div>
+
+		<div class="competitor" id="3"><p>Game 3 Winner</p></div> VS <div class="competitor" id="4"><p>Game 4 Winner</p></div>
+
+		<div class="competitor" id="5"><p>Game 5 Winner</p></div> VS <div class="competitor" id="6"><p>Game 6 Winner</p></div>
+
+		<div class="competitor" id="7"><p>Game 7 Winner</p></div> VS <div class="competitor" id="8"><p>Game 8 Winner</p></div>
 	</div>
 </div>
 
-<div id="round3" style="display:inline-block; vertical-align: top; width: 20%;">
+<div id="round3">
 	<h1 id="title" style="text-align: center">Round 3</h1>
 	<div class="center">
-		<div id="top"><%= image_tag(@kittens[0].url, size: '150') %></div><br>
-		<%= image_tag(@kittens[2].url, size: '150') %><br>
-		<%= image_tag(@kittens[4].url, size: '150') %><br>
-		<%= image_tag(@kittens[6].url, size: '150') %><br>
+		<div class="competitor" id="1"><p>Round 2 Game 1 Winner</p></div> VS <div class="competitor" id="2"><p>Round 2 Game 2 Winner</p></div>
+
+		<div class="competitor" id="3"><p>Round 2 Game 3 Winner</p></div> VS <div class="competitor" id="4"><p>Round 2 Game 4 Winner</p></div>
 	</div>
 </div>
 
-<div id="round4" style="display:inline-block; vertical-align: top; width: 20%;">
+<div id="round4">
 	<h1 id="title" style="text-align: center">Round 4</h1>
 	<div class="center">
-		<div id="top"><%= image_tag(@kittens[4].url, size: '150') %></div><br>
-		<%= image_tag(@kittens[6].url, size: '150') %><br>
+		<div class="competitor" id="1"><p>Game 1 Winner</p></div> VS <div class="competitor" id="2"><p>Game 2 Winner</p></div>
+	</div>
+</div>
+
+<div id="winner">
+	<h1 id="title" style="text-align: center">Winner 4</h1>
+	<div class="center">
+		<div class="competitor" id="1"><p>Tournament Winner</p></div>
 	</div>
 </div>
