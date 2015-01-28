@@ -5,7 +5,12 @@
 }
 
 #round1 {
+	display:inline-block;
+	vertical-align: top; 
+	width: 19%;
 	.competitor {
+		width: 202px;
+		height: 202px;
 		display: inline-block;
 		border: 1px solid;
 		margin: 20px 0px;
@@ -15,13 +20,13 @@
 #round2 {
 	display:inline-block;
 	vertical-align: top; 
-	width: 15%;
+	width: 19%;
 	.competitor {
 		p {
 			margin: 65px 0px;
 		}
-		width: 150px;
-		height: 150px;
+		width: 202px;
+		height: 202px;
 		display: inline-block;
 		border: 1px solid;
 		margin: 20px 0px;
@@ -31,13 +36,13 @@
 #round3 {
 	display:inline-block;
 	vertical-align: top; 
-	width: 15%;
+	width: 19%;
 	.competitor {
 		p {
 			margin: 65px 0px;
 		}
-		width: 150px;
-		height: 150px;
+		width: 202px;
+		height: 202px;
 		display: inline-block;
 		border: 1px solid;
 		margin: 20px 0px;
@@ -47,13 +52,13 @@
 #round4 {
 	display:inline-block;
 	vertical-align: top; 
-	width: 15%;
+	width: 19%;
 	.competitor {
 		p {
 			margin: 65px 0px;
 		}
-		width: 150px;
-		height: 150px;
+		width: 202px;
+		height: 202px;
 		display: inline-block;
 		border: 1px solid;
 		margin: 20px 0px;
@@ -68,8 +73,8 @@
 		p {
 			margin: 65px 0px;
 		}
-		width: 150px;
-		height: 150px;
+		width: 202px;
+		height: 202px;
 		display: inline-block;
 		border: 1px solid;
 		margin: 20px 0px;
